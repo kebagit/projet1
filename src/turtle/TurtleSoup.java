@@ -156,13 +156,13 @@ public class TurtleSoup {
     			drawRegularPolygon(turtle, 5, j);
     		
     		}
-    	
     		for(PenColor c : PenColor.values()){
-				turtle.color(c);
-				drawRegularPolygon(turtle, 25, 15);
-	        	turtle.forward(sidelength);
-	        	turtle.turn(180.0 - calculateRegularPolygonAngle(sides));
-			}
+    			turtle.color(c);
+    			drawRegularPolygon(turtle, 25, 15);
+            	turtle.forward(sidelength);
+            	turtle.turn(180.0 - calculateRegularPolygonAngle(sides));
+    		}
+    		
     	}
     	
 //        throw new RuntimeException("implement me!");
