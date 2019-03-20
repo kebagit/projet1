@@ -56,7 +56,7 @@ public class TurtleSoup {
      * @param angle size of interior angles in degrees, where 0 < angle < 180
      * @return the integer number of sides
      */
-    public static int calculatePolygonSidesFromAngle(double angle) {
+      public static int calculatePolygonSidesFromAngle(double angle) {
     	  
     	if(angle > 0 && angle < 180)
     		return (int)Math.round(360/(180 - angle));
@@ -73,7 +73,7 @@ public class TurtleSoup {
      * @param sides number of sides of the polygon to draw
      * @param sideLength length of each side
      */
-    public static void drawRegularPolygon(Turtle turtle, int sides, int sideLength) {
+     public static void drawRegularPolygon(Turtle turtle, int sides, int sideLength) {
     	double angl = calculateRegularPolygonAngle(sides);
     	for( int i = 0; i<sides; i++){
     		turtle.forward(sideLength);
@@ -177,7 +177,7 @@ public class TurtleSoup {
      */
     public static void main(String args[]) {
         DrawableTurtle turtle = new DrawableTurtle();
-//        drawSquare(turtle, 40);
+         drawSquare(turtle, 200);
 //        drawRegularPolygon(turtle, 9, 50);
         drawPersonalArt(turtle);
         // draw the window
